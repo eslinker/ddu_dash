@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="대덕대학교 LMS">
+    <meta name="author" content="대덕대학교">
+
+    <title>대덕대학 LMS 공지사항</title>
+
+    <!-- 구글 폰트 입력 부분-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+
+    <!--    사용자 편집 CSS-->
+    <link href="css/lineedu.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<div id="wrapper">
+
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!--            대학로고 일반-->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center my-3" href="index.html">
+            <span class="sidebar-brand- icon">
+                <img src="/img/symbol-icon.png" alt="" height="40">
+            </span>
+            <div class="sidebar-brand-text">
+                <img src="img/symbol-white.png" alt="" width="150" height="auto">
+            </div>
+        </a>
+
+        <!-- 분리선-->
+        <hr class="sidebar-divider my-0">
+
+        <!-- 대시보드 네비케이터 (추후 개발 필요현황 -->
+        <li class="nav-item active text-center">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-list"></i>
+                <span>HOME</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- 카테고리 분류 -->
+        <div class="sidebar-heading">
+            수강현황
+        </div>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-book-open"></i>
+                <span>수강과목</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="study_act.html">
+                <i class="fas fa-fw fa-rss-square"></i>
+                <span>학습활동</span></a>
+        </li>
+
+        <!--            <li class="nav-item">-->
+        <!--                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"-->
+        <!--                    aria-expanded="true" aria-controls="collapseTwo">-->
+        <!--                    <i class="fas fa-fw fa-cog"></i>-->
+        <!--                    <span>드롭다운 필요시 사용할 코드</span>-->
+        <!--                </a>-->
+        <!--                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">-->
+        <!--                    <div class="bg-white py-2 collapse-inner rounded">-->
+        <!--                        <h6 class="collapse-header">드롭다운 소제목</h6>-->
+        <!--                        <a class="collapse-item" href="#">1</a>-->
+        <!--                        <a class="collapse-item" href="#">2</a>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </li>-->
+
+
+        <hr class="sidebar-divider">
+
+
+        <div class="sidebar-heading">
+            지원센터
+        </div>
+
+
+        <li class="nav-item">
+            <a class="nav-link" href="supply.html">
+                <i class="fas fa-fw fa-university"></i>
+                <span>지원센터</span>
+            </a>
+            <a class="nav-link" href="notice_create.html">
+                <i class="fas fa-fw fa-edit"></i>
+                <span>공지사항 등록</span>
+            </a>
+            <a class="nav-link" href="faq_create.html">
+                <i class="fas fa-fw fa-user-edit"></i>
+                <span>FAQ 등록</span>
+            </a>
+        </li>
+
+
+        <hr class="sidebar-divider d-none d-md-block">
+
+
+        <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+
+    </ul>
+
+
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!--           메인화면-->
+        <div id="content">
+
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+
+                <!-- 탭부분 네비게이션-->
+                <ul class="navbar-nav ml-auto">
+                    <!-- 알림아이콘 부분 -->
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell fa-fw" id="alert-bell"></i>
+                            <!-- 알림 숫자 -->
+                            <span class="badge badge-danger badge-counter">0</span>
+                        </a>
+                        <!-- Dropdown - Alerts -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                             aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">
+                                대덕대학교 알림센터
+                            </h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-primary">
+                                        <i class="fas fa-file-alt text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">2023 - 03 - 02</div>
+                                    <span class="font-weight-bold">추후 서비스 오프 예정입니다.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">모든 알림 보러 가기</a>
+                        </div>
+                    </li>
+
+                    <!-- Nav Item - Messages -->
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-envelope fa-fw" id="envelope-alert"></i>
+                            <!--                            메시지 카운터 알림 숫자-->
+                            <span class="badge badge-danger badge-counter">7</span>
+                        </a>
+                        <!--                        메시지 드롭다운-->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                             aria-labelledby="messagesDropdown">
+                            <h6 class="dropdown-header">
+                                메시지함
+                            </h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="font-weight-bold">
+                                    <div class="text-truncate">추후 서비스 예정입니다.
+                                    </div>
+                                    <div class="small text-gray-500">관리자 · 1일전</div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">메시지 모두 보기</a>
+                        </div>
+                    </li>
+
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600" style="font-size: 1.2rem">이 학생</span>
+                            <i class="img-profile rounded-circle fas fa-fw fa-user-cog"></i>
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                             aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                나의 정보 관리
+                            </a>
+
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                로그아웃
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a href="#" class="btn btn-outline-primary">강의실</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 mb-4">
+                        <!--                        공지사항 뷰 테이블 -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="d-sm-inline-block font-weight-bold text-point">공지사항</h5>
+                                <div class="d-none d-inline-block float-right pr-4">
+                                    <span class="mr-2 small">작성자 :</span>
+                                    <span class="mr-3 small">CTL관리자</span>
+                                    <span class="small">작성일 : </span>
+                                    <span class="text-monospace text-muted small">2023-03-05 16:50</span>
+                                </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                    <div class="notice_title font-weight-bold mt-2">
+                                        공지사항 등록 연습입니다.
+                                    </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-inline-flex float-right next-line">
+                                                <a href="" class="btn btn-sm btn-outline-dark ml-3">목록으로</a>
+                                                <a href="" class="btn btn-sm btn-outline-success ml-3">공지사항 수정</a>
+                                                <a href="" class="btn btn-sm btn-outline-danger ml-3">공지사항 삭제</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notice_contents w-80">
+
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            디지털 전환은 디지털 기술을 모든 비즈니스 분야에 적용하여 조직을 근본적으로 변화시키는 프로세스를 의미하며 디지털 트랜스포메이션
+                                            (Digital Transformation; DT, DX)이라고도 합니다. 이미 많은 기업이 디지털 전환의 중요성을 느끼고 클라우드,
+                                            인공 지능, IoT, 블록체인 등 핵심 디지털 기술 및 데이터를 활용하여 비즈니스 변화를 시도하고 있습니다. 이제 기업 경영에서 디지털과
+                                            데이터는 없어서는 안 될 지표인데요. 이러한 지표를 활용하여 서비스업, 제조업, 공공기관 등 다양한 영역에서의 디지털 전환이 본격적으로
+                                            이뤄지고 있습니다.</p>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <a href="https://elice.io/newsroom/dx_meaning"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(9, 105, 218); -webkit-tap-highlight-color: transparent;">디지털
+                                                전환 및 핵심 디지털 기술에 대해서 더 알아보고 싶다면? - 바로 가기</a></p>
+                                        <p>
+                                            <br style="-webkit-font-smoothing: antialiased; color: rgb(36, 41, 47); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; letter-spacing: 0.15008px;">
+                                        </p>
+                                        <h2 style="-webkit-font-smoothing: antialiased; margin: 24px 0px 16px; padding: 0px 0px 0.3em; border-top: 0px; border-right: 0px; border-bottom: none; border-left: 0px; border-image: initial; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 1.5em; line-height: 1.25; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: var(--color-gray-800); letter-spacing: 0.15008px;">
+                                            <a class="anchor-hash"
+                                               href="https://elice.io/newsroom/3_cases_of_ditital_transformation_on_public_institutions#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%EB%94%94%EC%A7%80%ED%84%B8-%EC%A0%84%ED%99%98%EC%9D%B4-%EC%A4%91%EC%9A%94%ED%95%9C-%EC%9D%B4%EC%9C%A0"
+                                               id="공공기관의-디지털-전환이-중요한-이유"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: var(--color-gray-800); -webkit-tap-highlight-color: transparent;">공공기관의
+                                                디지털 전환이 중요한 이유</a></h2>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            그렇다면 공공기관의 디지털 전환 도입이 빠르게 실행되어야 하는 이유는 무엇일까요? 3가지 이유를 들어 설명해 드리도록 하겠습니다.</p>
+                                        <p>
+                                            <br style="-webkit-font-smoothing: antialiased; color: rgb(36, 41, 47); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; letter-spacing: 0.15008px;">
+                                        </p>
+                                        <h3 style="-webkit-font-smoothing: antialiased; margin: 24px 0px 16px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 1.25em; line-height: 1.25; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <a class="anchor-hash"
+                                               href="https://elice.io/newsroom/3_cases_of_ditital_transformation_on_public_institutions#%EC%97%85%EB%AC%B4-%EC%86%8D%EB%8F%84-%EB%B0%8F-%EC%9C%A0%EA%B8%B0%EC%84%B1-%ED%96%A5%EC%83%81"
+                                               id="업무-속도-및-유기성-향상"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: var(--color-gray-800); -webkit-tap-highlight-color: transparent;">업무
+                                                속도 및 유기성 향상</a></h3>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            공공기관 디지털 전환이 중요한 첫 번째 이유는 바로 업무의 속도가 빨라지고 유기적인 업무가 가능해진다는 것입니다. 한국은 디지털 정부를
+                                            표방하며 이전부터 많은 행정 업무 데이터를 디지털 자료로 보관하고 있었는데요. 그런데도 자료 제출 및 보관은 아직 수작업으로 진행되고
+                                            있습니다. 이렇게 수작업으로 진행되던 일들을 디지털 기술을 활용하여 진행한다면 업무 효율성을 대폭 향상할 수 있습니다. 또한 공공기관은
+                                            여러 조직의 공동 목적을 달성하기 위해서 유기적으로 업무를 진행해야 할 때가 많은데요. 이때 클라우드 도입 등 업무 공유 과정에서 DX
+                                            를 도입한다면 긴급한 상황에서도 신속하고 유연한 업무가 가능해집니다. 그리고 공공데이터에 대한 시민의 접근성도 좋아지면서 이를 가치 있게
+                                            활용하여 혁신적인 서비스가 탄생할 수 있는 토대를 마련하게 됩니다.</p>
+                                        <h3 style="-webkit-font-smoothing: antialiased; margin: 24px 0px 16px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 1.25em; line-height: 1.25; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <a class="anchor-hash"
+                                               href="https://elice.io/newsroom/3_cases_of_ditital_transformation_on_public_institutions#%EC%A0%95%EB%B3%B4%EC%9D%98-%ED%88%AC%EB%AA%85%EC%84%B1-%EA%B0%95%ED%99%94"
+                                               id="정보의-투명성-강화"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: var(--color-gray-800); -webkit-tap-highlight-color: transparent;">정보의
+                                                투명성 강화</a></h3>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            다음으로 공공기관 디지털 전환이 중요한 이유는 정보의 투명성을 강화할 수 있다는 것입니다. 클라우드 도입 등을 통해 정부와 공공기관에서
+                                            DX 가 이루어진다면 대량의 공공 데이터를 클라우드에 온전히 저장하고, 객관적인 데이터 분석을 통해 행정 처리의 투명성을 보장할 수
+                                            있습니다. 정보의 투명성은 공정함과 직결되는데요. 이러한 공정성은 공공기관이 갖추어야 하는 중요한 항목이기 때문에 공공기관의 디지털
+                                            전환은 민간기업의 DX보다도 더욱 중요하다고 할 수 있습니다. 또한 디지털 인프라를 안전하게 구축하는 것도 디지털 기술의 핵심 요소 중
+                                            하나인데요. 국가 차원에서 구축한 디지털 인프라로 여러 기업에 투명하게 데이터를 제공하고, 활용함으로써 공공데이터의 경제적, 사회적 효용
+                                            가치를 높일 수 있습니다.</p>
+                                        <h3 style="-webkit-font-smoothing: antialiased; margin: 24px 0px 16px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 1.25em; line-height: 1.25; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <a class="anchor-hash"
+                                               href="https://elice.io/newsroom/3_cases_of_ditital_transformation_on_public_institutions#%EB%B9%84%EC%9A%A9-%EC%A0%88%EA%B0%90"
+                                               id="비용-절감"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: var(--color-gray-800); -webkit-tap-highlight-color: transparent;">비용
+                                                절감</a></h3>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            공공기관 디지털 기술 도입 및 디지털 정부는 비용 절감에도 효과적입니다. 디지털 전환을 도입하면 일일이 수작업으로 하던 업무를 자동화하여
+                                            시간과 비용을 절감할 수 있습니다. 또한 클라우드는 기존에 대량의 문서를 보관, 처리, 보안 유지하는데 사용되던 관리 비용보다 훨씬 더
+                                            적은 비용으로 문서를 보관하고 보안을 유지할 수 있도록 도와줍니다. 그러므로 공공기관 디지털 전환은 사회 전반적으로 매우 중요하며 더
+                                            이상 선택이 아닌 필수라고 할 수 있습니다.</p>
+                                        <p>
+                                            <br style="-webkit-font-smoothing: antialiased; color: rgb(36, 41, 47); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; letter-spacing: 0.15008px;">
+                                        </p>
+                                        <h2 style="-webkit-font-smoothing: antialiased; margin: 24px 0px 16px; padding: 0px 0px 0.3em; border-top: 0px; border-right: 0px; border-bottom: none; border-left: 0px; border-image: initial; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 1.5em; line-height: 1.25; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: var(--color-gray-800); letter-spacing: 0.15008px;">
+                                            <a class="anchor-hash"
+                                               href="https://elice.io/newsroom/3_cases_of_ditital_transformation_on_public_institutions#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%94%94%EC%A7%80%ED%84%B8-%EC%A0%84%ED%99%98-%EC%82%AC%EB%A1%80-3%EA%B0%80%EC%A7%80"
+                                               id="공공기관-디지털-전환-사례-3가지"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: var(--color-gray-800); -webkit-tap-highlight-color: transparent;">공공기관
+                                                디지털 전환 사례 3가지</a></h2>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            그렇다면 지금부터 공공기관 디지털 전환의 실제 사례를 알아보겠습니다.</p>
+                                        <p>
+                                            <br style="-webkit-font-smoothing: antialiased; color: rgb(36, 41, 47); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; letter-spacing: 0.15008px;">
+                                        </p>
+                                        <h3 style="-webkit-font-smoothing: antialiased; margin: 24px 0px 16px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 1.25em; line-height: 1.25; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <a class="anchor-hash"
+                                               href="https://elice.io/newsroom/3_cases_of_ditital_transformation_on_public_institutions#%EB%AF%B8%EA%B5%AD-%EA%B5%90%ED%86%B5%EB%B6%80--%EB%94%94%EC%A7%80%ED%84%B8-%EB%8F%84%EB%A1%9C%EA%B5%90%ED%86%B5-%ED%94%8C%EB%9E%AB%ED%8F%BC"
+                                               id="미국-교통부--디지털-도로교통-플랫폼"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: var(--color-gray-800); -webkit-tap-highlight-color: transparent;">미국
+                                                교통부 - 디지털 도로교통 플랫폼</a></h3>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <img src="https://cdn-api.elice.io/api-attachment/attachment/d569b03efd0b4042b578cbe46076221f/%E1%84%83%E1%85%B5%E1%84%8C%E1%85%B5%E1%84%90%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%92%E1%85%AA%E1%86%AB%202%402x.png"
+                                                 alt="디지털 전환, DX, 공공기관 디지털 전환, 클라우드 도입, 디지털 정부"
+                                                 style="box-sizing: content-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border-width: 0px; border-color: initial; border-image: initial; font: inherit; vertical-align: baseline; max-width: 100%;">
+                                        </p>
+                                        <figcaption align="right"
+                                                    style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            &lt;출처&gt;&nbsp;<a
+                                                href="https://redshift.autodesk.co.kr/articles/digital-transformation-in-government-kr"
+                                                style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(9, 105, 218); -webkit-tap-highlight-color: transparent;">[Redshift]</a>
+                                        </figcaption>
+                                        <p>
+                                            <br style="-webkit-font-smoothing: antialiased; color: rgb(36, 41, 47); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; letter-spacing: 0.15008px;">
+                                        </p>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            공공기관 디지털 전환은 이미 많은 나라에서 이루어지고 있습니다. 그중 미국 교통부도 디지털 기술을 활용하여 디지털 정부에 성큼 다가서고
+                                            있는데요. 미국은 한국과는 달리 각각의 주(state)가 자체적으로 운영되어 정보가 별도로 관리될 수밖에 없습니다. 그렇기 때문에
+                                            이전에는 거리가 먼 지역의 계약자나 지방 자치단체와 함께 수십 개의 프로젝트를 유기적으로 수행하기가 어려웠습니다. 또한 모두에게 필요한
+                                            정보를 제공하고 공유하는 것도 쉽지 않았습니다. 하지만 최근에는 연방고속도로관리국에서 국가 차원의 프로그램인 ‘Every Day
+                                            Counts’라는 새로운 모델을 제시하며 미국 교통부의 디지털 전환을 촉진했습니다. 이는 앞서 언급했던 업무의 유기성 향상에 대한 좋은
+                                            사례이기도 합니다.</p>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            ‘Every Day Counts’는 각 주와 지역 차원에서 적합한 운송 과정을 도입할 수 있는 디지털 도로 교통 플랫폼을 구축하였습니다.
+                                            또한 클라우드 도입을 통해 모든 주가 교통 관련 데이터를 통합하고 공유하며 교통 상황을 개선하고 효율적으로 도로를 관리할 수 있게
+                                            되었습니다.<br style="-webkit-font-smoothing: antialiased;"><br
+                                                style="-webkit-font-smoothing: antialiased;"></p>
+                                        <h3 style="-webkit-font-smoothing: antialiased; margin: 24px 0px 16px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 600; font-stretch: inherit; font-size: 1.25em; line-height: 1.25; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <a class="anchor-hash"
+                                               href="https://elice.io/newsroom/3_cases_of_ditital_transformation_on_public_institutions#%EA%B5%AD%EB%AF%BC%EC%97%B0%EA%B8%88%EA%B3%B5%EB%8B%A8--%EB%94%94%EC%A7%80%ED%84%B8-%EC%B0%BD%EA%B5%AC"
+                                               id="국민연금공단--디지털-창구"
+                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: var(--color-gray-800); -webkit-tap-highlight-color: transparent;">국민연금공단
+                                                - 디지털 창구</a></h3>
+                                        <p style="-webkit-font-smoothing: antialiased; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: 1.6; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            <img src="https://cdn-api.elice.io/api-attachment/attachment/4d536380366a4fa9b089d34233f60484/%E1%84%83%E1%85%B5%E1%84%8C%E1%85%B5%E1%84%90%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%92%E1%85%AA%E1%86%AB%203%402x.png"
+                                                 alt="미국 교통부, 공공기관 디지털 전환, 디지털 정부, 클라우드 도입, DX"
+                                                 style="box-sizing: content-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border-width: 0px; border-color: initial; border-image: initial; font: inherit; vertical-align: baseline; max-width: 100%;">
+                                        </p>
+                                        <figcaption align="right"
+                                                    style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; vertical-align: baseline; color: rgb(36, 41, 47); letter-spacing: 0.15008px;">
+                                            &lt;출처&gt;&nbsp;<a href="https://www.jjan.kr/article/20220928580341"
+                                                               style="-webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(9, 105, 218); -webkit-tap-highlight-color: transparent;">[전북일보]</a>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                                <hr style="color: #6f95ff; width: 100%">
+                                <div class="card-body">
+                                    <div class="next-line">
+                                        <div>
+                                            <a href="" class="btn btn-light ml-3">다음글</a>
+                                            <a href="" class="btn btn-light ml-3">이전글</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- 푸터 -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; 대덕대학교 LMS System</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- 로그아웃 창-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">로그아웃 하시겠습니까?</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">취소</button>
+                <a class="btn btn-primary" href="login.html">로그아웃</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!--자바스크립트 커스텀 부분 밑에 넣으세요-->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<script src="js/lineEdu.js"></script>
+
+</body>
+
+</html>

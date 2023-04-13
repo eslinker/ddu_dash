@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="49e239a0-3c76-4cb1-9355-93d8847b972e" name="publish">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="publish.lineus.kr" port="22" sshConfigId="473dab81-2076-4073-8ea0-d9f4d54b642c" sshConfig="root@publish.lineus.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
