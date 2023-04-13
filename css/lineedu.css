@@ -11519,3 +11519,11 @@ body.sidebar-toggled footer.sticky-footer {
   height: 1rem;
   margin: auto 1rem;
 }
+.table_list
+{
+  padding-top: 0;
+  width: 100%;
+}
+.table_box {
+  width:100%;
+}
